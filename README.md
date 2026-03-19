@@ -31,7 +31,7 @@
 ### 方式一：直接安装（推荐）
 
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
-2. 前往 [Releases 页面](https://github.com/yang-kun-long/bit-reserve-userscript/releases/latest) 下载 `bit-reserve-userscript.user.js`，用 Tampermonkey 打开安装
+2. 点击 [GreasyFork 安装页面](https://greasyfork.org/zh-CN/scripts/570217-bit-%E7%A0%94%E8%AE%A8%E5%AE%A4%E9%A2%84%E7%BA%A6%E5%8A%A9%E6%89%8B) 一键安装，或前往 [Releases 页面](https://github.com/yang-kun-long/bit-reserve-userscript/releases/latest) 手动下载安装
 3. 访问 [研讨室预约系统](http://stu.bit.edu.cn/xsfw/sys/cdyyapp/)，脚本自动生效
 
 > 使用前需先登录北理工统一身份认证，脚本自动复用浏览器 Cookie。
