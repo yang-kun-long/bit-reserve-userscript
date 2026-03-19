@@ -45,7 +45,6 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git fetch origin main
           git checkout main
-          cp dist/bit-reserve-userscript.user.js dist/bit-reserve-userscript.user.js
           git add dist/bit-reserve-userscript.user.js
           git diff --cached --quiet || git commit -m "chore: update dist for ${{ github.ref_name }} [skip ci]"
           git push origin main
