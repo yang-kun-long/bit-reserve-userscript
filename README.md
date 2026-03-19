@@ -22,7 +22,7 @@
 - **场地详情**：查看场地地址、容纳人数、设备设施、预约须知
 - **时间段查询**：实时查询指定日期的可预约时间段，直观显示可用/已占用状态
 - **在线预约**：填写预约表单，支持多时间段合并预约
-- **我的预约**：查看历史预约记录审核状态
+- **我的预约**：查看历史预约记录及审核状态
 - **撤回预约**：支持撤回待审核预约、删除草稿
 - **信息记忆**：自动保存姓名、电话等常用信息，下次预约无需重复填写
 
@@ -31,7 +31,7 @@
 ### 方式一：直接安装（推荐）
 
 1. 安装 [Tampermonkey](https://www.tampermonkey.net/) 浏览器扩展
-2. 下载 `dist/bit-reserve-userscript.user.js`，用 Tampermonkey 打开安装
+2. 前往 [Releases 页面](https://github.com/yang-kun-long/bit-reserve-userscript/releases/latest) 下载 `bit-reserve-userscript.user.js`，用 Tampermonkey 打开安装
 3. 访问 [研讨室预约系统](http://stu.bit.edu.cn/xsfw/sys/cdyyapp/)，脚本自动生效
 
 > 使用前需先登录北理工统一身份认证，脚本自动复用浏览器 Cookie。
@@ -93,9 +93,10 @@ npm run build
 bit-reserve-userscript/
 ├── src/
 │   └── App.vue          # 主组件，包含全部 UI 和业务逻辑
-├── dist/
-│   └── bit-reserve-userscript.user.js  # 构建产物，可直接安装
-├── vite.config.ts       # Vite + vite-plugin-monkey 配置
+├── .github/
+│   └── workflows/
+│       └── release.yml  # 自动构建并发布 Release
+├── vite.config.js       # Vite + vite-plugin-monkey 配置
 ├── package.json
 └── README.md
 ```
